@@ -10,40 +10,37 @@
 2.  Run the app:
    `npm run dev`
 
-Product Management Dashboard
-│
-├── 1. Authentication
-│     ├── Login
-│     ├── Register (optional)
-│    
-│
-├── 2. Dashboard Overview
-│     ├── Total Products
-│     ├── Total Orders
-│     ├── Total Users
-│     ├── Sales Analytics
-│     └── Low Stock Alerts
-│
-├── 3. Product Management
-│     ├── View Products Table
-│     │     ├── Sort & Filter
-│     │     └── Search
-│     ├── Add Product
-│     ├── Edit Product
-│     └── Delete Product
-│
-├── 4. Category Management
-│     ├── Add Category
-│     ├── Edit Category
-│     └── Delete Category
-│
-├── 5. User & Role Management
-│     ├── Add User
-│     ├── Assign Roles (Admin / Editor / Viewer)
-│     ├── Update User Info
-│     └── Enable / Disable Users
-│
-├── 6. Settings
-     ├── Light / Dark Mode
-     ├── Update Profile
-     └── Change Password
+graph TD
+    A[Product Dashboard]
+    A --> B[Authentication]
+    B --> B1[Login]
+    B --> B2[Register]
+    B --> B3[Reset Password]
+
+    A --> C[Dashboard Overview]
+    C --> C1[Total Products]
+    C --> C2[Total Orders]
+    C --> C3[Total Users]
+    C --> C4[Sales Analytics]
+    C --> C5[Low Stock]
+
+    A --> D[Product Management]
+    D --> D1[View Products]
+    D --> D2[Add Product]
+    D --> D3[Edit Product]
+    D --> D4[Delete Product]
+
+    A --> E[Category Management]
+    E --> E1[Add Category]
+    E --> E2[Edit Category]
+    E --> E3[Delete Category]
+
+    A --> F[User Management]
+    F --> F1[Add User]
+    F --> F2[Assign Roles]
+    F --> F3[Update User Info]
+    F --> F4[Enable/Disable]
+
+    A --> G[Settings]
+    G --> G1[Light/Dark]
+    G --> G2[Update Profile]
